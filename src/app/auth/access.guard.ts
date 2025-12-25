@@ -7,5 +7,11 @@ export const canActivateAuth=()=>{
   if(isLoggedIn){
     return true
   }
-  return inject(Router)
+  return inject(Router).createUrlTree(['/login'])
 }
+
+
+
+
+
+// test
